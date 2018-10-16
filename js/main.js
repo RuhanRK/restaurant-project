@@ -160,7 +160,13 @@ createRestaurantHTML = (restaurant) => {
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
-  image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  let imgUrl = DBHelper.imageUrlForRestaurant(restaurant);
+  imgUrl = imgUrl.substring(0, imgUrl.length-4);
+  const img1x = imgUrl + "_320.jpg";
+  const img2x = imgUrl + "_600.jpeg";
+  image.src = img1x;
+  image.srcset = `${img1x} 320w, ${img2x} 600w`;
+  image.sizes = `(max-width: 600px) 320px, (max-width: 900px) 600px, 800px`;
   image.setAttribute('tabindex', 0);
   image.alt = `${restaurant.name} restaurant in ${restaurant.neighborhood}`;
   li.append(image);
