@@ -150,6 +150,10 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
  * Create review HTML and add it to the webpage.
  */
 createReviewHTML = (review) => {
+
+  // Set Review ID to the Next Random Number
+  let review_id = Math.floor(Math.random() * 2000);
+
   const li = document.createElement('li');
   const name = document.createElement('p');
   name.innerHTML = review.name;
@@ -167,7 +171,13 @@ createReviewHTML = (review) => {
   comments.innerHTML = review.comments;
   li.appendChild(comments);
 
+  // add tabindex
   li.setAttribute('tabindex', 1);
+
+  // Add Aria LabelledBy Attribute for Review
+  let label_attribute = document.createAttribute("aria-labelledby");    
+  label_attribute.value = review_id + "_label";                         
+  li.setAttributeNode(label_attribute); 
 
   return li;
 }
