@@ -25,13 +25,13 @@
       <div id="map"></div>
     </section>
     <section id="main-section">
-      <div tabindex="0" class="filter-options">
-        <h2>Filter Results</h2>
-        <label for="neighborhoods-select"></label>
+      <div class="filter-options">
+        <h2 class="filter-options__heading" tabindex="0">Filter Results</h2>
+        <label tabindex="0" for="neighborhoods-select">Search By Neighborhoods</label>
         <select tabindex="0" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <label for="cuisines-select"></label>
+        <label for="cuisines-select">Search by Cuisines</label>
         <select tabindex="0" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
