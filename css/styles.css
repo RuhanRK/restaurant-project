@@ -71,7 +71,7 @@ header{
 }
 #footer {
   background-color: #444;
-  color: #aaa;
+  color: #eee;
   font-size: 1rem;
   padding: 2.5rem;
   text-align: center;
@@ -259,7 +259,7 @@ nav h1 a:hover{
 }
 #restaurants-list li a:link,
 #restaurants-list li a:visited {
-  background-image: linear-gradient(to right, #7d8706, #969d09, #b1b30b, #cdc90f, #ebe012);
+  background-image: linear-gradient(to right, #2AAE44, #2aae44c9, #2abb46, #46b35c, #05de30);
   color: #000;
   display: inline-block;
   font-size: 1.3rem;
@@ -383,14 +383,13 @@ nav h1 a:hover{
 #reviews-list li p:nth-child(1){
   font-size: 1.5rem;
   font-weight: 700;
-  /* padding: .8555rem; */
 }
 #reviews-list li p:nth-child(3){
   display: inline-block;
   text-align: center;
   background-color: #FFA500;
   padding: .5rem 1rem;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   border-radius: .5rem;
   font-weight: bold;
@@ -506,7 +505,7 @@ a#skip-link:focus{
     font-size: 1.6rem;
   }
   #restaurants-list li a:hover{
-    background-image: linear-gradient(to left, #7d8706, #969d09, #b1b30b, #cdc90f, #ebe012);
+    background-image: linear-gradient(to left, #2AAE44, #2aae44c9, #2abb46, #46b35c, #05de30);
     transform: translateY(-3px);
   }
   #restaurants-list li a:active{
@@ -518,7 +517,7 @@ a#skip-link:focus{
     height: 100%;
     width: 100%;
     border-radius: .8rem;
-    background-image: linear-gradient(to right, #7d8706, #969d09, #b1b30b, #cdc90f, #ebe012);
+    background-image: linear-gradient(to right, #2AAE44, #2aae44c9, #2abb46, #46b35c, #05de30);
     position: absolute;
     top: 0;
     left: 0;
