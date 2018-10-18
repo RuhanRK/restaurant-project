@@ -1,6 +1,8 @@
 /**
  * Common database helper functions.
  */
+
+let hostedOnGitHubFlag = (window.location.hostname === "ruhanrk.github.io") ? 'github' : '' ;
 class DBHelper {
 
   /**
