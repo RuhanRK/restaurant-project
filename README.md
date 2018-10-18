@@ -75,11 +75,5 @@ Here some screenshot of this project:
 ![Image of Restaurant Project](https://preview.ibb.co/c6HQWL/rating-button.png)
 
 
-
-
-Now Enjoy Online Version. Click Below :point_down::
-
-> [Restaurant Review Stage 1]() 
-
 Here Demo Video Youtube Link :heart_eyes::
 > [Demo](https://youtu.be/sFko5wySooc) 
