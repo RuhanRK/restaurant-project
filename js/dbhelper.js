@@ -12,7 +12,6 @@ class DBHelper {
   static get DATABASE_URL() {
     const port = 8080 // Change this to your server port
     if(hostedOnGitHubFlag) {
-      console.log(window.location.hostname);
       return `https://ruhanrk.github.io/restaurant-project/data/restaurants.json`;
     }else {
       return `http://localhost:${port}/data/restaurants.json`;
