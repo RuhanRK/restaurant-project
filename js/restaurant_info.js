@@ -89,7 +89,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
-  image.alt = `${restaurant.name} restaurant in ${restaurant.neighborhood}`
+  image.alt = `This is picture ${restaurant.name} restaurant in ${restaurant.neighborhood}`
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
@@ -129,7 +129,6 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
   const title = document.createElement('h2');
   title.innerHTML = 'Reviews';
-  title.setAttribute('tabindex', 1);
   title.setAttribute('role', 'heading');
   container.appendChild(title);
 
@@ -172,7 +171,7 @@ createReviewHTML = (review) => {
   li.appendChild(comments);
 
   // add tabindex
-  li.setAttribute('tabindex', 1);
+  li.setAttribute('tabindex', 0);
 
   // Add Aria LabelledBy Attribute for Review
   let label_attribute = document.createAttribute("aria-labelledby");    
@@ -189,7 +188,7 @@ fillBreadcrumb = (restaurant=self.restaurant) => {
   const breadcrumb = document.getElementById('breadcrumb');
   const li = document.createElement('li');
   li.innerHTML = restaurant.name;
-  li.setAttribute('tabindex', 1);
+  li.setAttribute('tabindex', 0);
   breadcrumb.appendChild(li);
 }
 
