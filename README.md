@@ -20,6 +20,7 @@ For the **Restaurant Reviews** projects,I have converted a static webpage to a m
     2. Used **srcset**, **sizes** attributes for Different width.
     3. Used `CSS Grid` and `CSS Flexbox` for dynamic layout.
 - All of js code done with `ES6`.
+- Cool Favicon Icon.
 
 
 
@@ -79,3 +80,6 @@ Here some screenshot of this project:
 Now Enjoy Online Version. Click Below :point_down::
 
 > [Restaurant Review Stage 1]() 
+
+Here Demo Video Youtube Link :heart_eyes::
+> [Demo](https://youtu.be/sFko5wySooc) 
